@@ -13,10 +13,10 @@ public class TreeMapExample {
         // Access a value
         accessValue(map);
 
-        // Check if a key or value exists
+        // Check if key or value exists
         checkKeyValue(map);
 
-        // Iterate through the TreeMap
+        // Iterate through TreeMap
         iterateMap(map);
 
         // Demonstrate additional TreeMap operations
@@ -64,15 +64,6 @@ public class TreeMapExample {
         }
     }
 
-    private static void additionalOperations(TreeMap<String, Integer> map) {
-        // Demonstrate operations that take advantage of TreeMap's sorting
-        map.putIfAbsent("Cherry", 10);
-        map.replace("Banana", 6);
-        map.computeIfPresent("Apple", (k, v) -> v + 1);
-        map.computeIfAbsent("Peach", k -> 7);
-        System.out.println("After additional operations: " + map);
-    }
-
     private static void removeEntry(TreeMap<String, Integer> map) {
         // Remove an entry
         map.remove("Orange");
@@ -82,12 +73,21 @@ public class TreeMapExample {
     private static void checkSize(TreeMap<String, Integer> map) {
         // Check the size of the TreeMap
         int size = map.size();
-        System.out.println("Size: " + size); // Outputs: Size: 3
+        System.out.println("Size: " + size); // Outputs: "Size: 3" ()
     }
 
     private static void clearMap(TreeMap<String, Integer> map) {
         // Clear the TreeMap
         map.clear();
-        System.out.println("Size after clearing: " + map.size()); // Outputs: Size after clearing: 0
+        System.out.println("Size after clearing: " + map.size()); // Outputs: "Size after clearing: 0"
+    }
+
+    private static void additionalOperations(TreeMap<String, Integer> map) {
+        // Demonstrate operations that take advantage of TreeMap's sorting
+        map.putIfAbsent("Cherry", 10);
+        map.replace("Banana", 6);
+        map.computeIfPresent("Apple", (k, v) -> v + 1);
+        map.computeIfAbsent("Peach", k -> 7);
+        System.out.println("After additional operations: " + map);
     }
 }

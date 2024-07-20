@@ -1,14 +1,17 @@
 # README for LinkedHashMap in Java
 
 ## Overview
+
 LinkedHashMap in Java extends HashMap and maintains a linked list of the entries in the map, which allows it to maintain the order of insertion. This feature makes LinkedHashMap especially useful when you need to preserve the order in which keys were inserted into the map. It can also be configured to maintain access order, making it suitable for building LRU caches.
 
 ## Features
+
 - **Order Maintenance:** Maintains insertion order of entries by default; can be configured for access order.
 - **Performance:** Offers constant time performance for the common operations (get and put), provided the hash function disperses the elements properly among the buckets.
 - **Structure:** Stores data in key-value pairs and contains a doubly-linked list running through its entries to maintain order.
 
 ## Key Operations
+
 1. **Initialization**
    LinkedHashMap<Integer, String> map = new LinkedHashMap<>();
 
@@ -28,9 +31,9 @@ LinkedHashMap in Java extends HashMap and maintains a linked list of the entries
 
 6. **Iterating Through LinkedHashMap**
    for (Map.Entry<Integer, String> entry : map.entrySet()) {
-       Integer key = entry.getKey();
-       String value = entry.getValue();
-       System.out.println(key + ": " + value);
+      Integer key = entry.getKey();
+      String value = entry.getValue();
+      System.out.println(key + ": " + value);
    }
 
 7. **Size**

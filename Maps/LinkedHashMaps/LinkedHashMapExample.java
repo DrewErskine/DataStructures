@@ -64,22 +64,6 @@ public class LinkedHashMapExample {
         }
     }
 
-    private static void additionalOperations(LinkedHashMap<String, Integer> map) {
-        // Demonstrate putIfAbsent
-        map.putIfAbsent("Banana", 10);
-        map.putIfAbsent("Grapes", 10);
-        System.out.println("After putIfAbsent: " + map);
-
-        // Demonstrate computeIfPresent
-        map.computeIfPresent("Apple", (k, v) -> v + 1);
-        map.computeIfPresent("Grapes", (k, v) -> v + 1);
-        System.out.println("After computeIfPresent: " + map);
-
-        // Demonstrate computeIfAbsent
-        map.computeIfAbsent("Peach", k -> 7);
-        System.out.println("After computeIfAbsent: " + map);
-    }
-
     private static void removeEntry(LinkedHashMap<String, Integer> map) {
         // Remove an entry
         map.remove("Orange");
@@ -96,5 +80,21 @@ public class LinkedHashMapExample {
         // Clear the LinkedHashMap
         map.clear();
         System.out.println("Size after clearing: " + map.size()); // Outputs: Size after clearing: 0
+    }
+
+    private static void additionalOperations(LinkedHashMap<String, Integer> map) {
+        // Demonstrate putIfAbsent
+        map.putIfAbsent("Banana", 10);
+        map.putIfAbsent("Grapes", 10);
+        System.out.println("After putIfAbsent: " + map);
+
+        // Demonstrate computeIfPresent
+        map.computeIfPresent("Apple", (k, v) -> v + 1);
+        map.computeIfPresent("Grapes", (k, v) -> v + 1);
+        System.out.println("After computeIfPresent: " + map);
+
+        // Demonstrate computeIfAbsent
+        map.computeIfAbsent("Peach", k -> 7);
+        System.out.println("After computeIfAbsent: " + map);
     }
 }
