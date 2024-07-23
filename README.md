@@ -63,7 +63,7 @@ Collections in Java are structures that hold multiple elements within a single u
 Maps in Java store and manage data in key-value pairs, allowing for efficient data retrieval, update, and management through unique keys.
 
 - **ConcurrentHashMaps:** Ideal for handling data in multi-thread environments without the need for synchronization.
-  - [Learn about ConcurrentHashMaps](./Maps/ConcurrentHashMaps/ConcurrentHashMaps-README.md)
+  - [Learn about ConcurrentHashMaps](Maps/ConcurrentHashMaps/ConcurrentHashMaps-README.md)
   - [ConcurrentHashMap Example](Maps/ConcurrentHashMaps/ConcurrentHashMapExample.java)
 
 - **HashMaps:** Best suited for fast access and storage with no order requirement.
