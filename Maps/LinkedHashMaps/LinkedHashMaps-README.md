@@ -10,6 +10,8 @@ LinkedHashMap in Java extends HashMap and maintains a linked list of the entries
 - **Performance:** Offers constant time performance for the common operations (get and put), provided the hash function disperses the elements properly among the buckets.
 - **Structure:** Stores data in key-value pairs and contains a doubly-linked list running through its entries to maintain order.
 
+---
+
 ## Key Operations
 
 1. **Initialization**
@@ -41,3 +43,9 @@ LinkedHashMap in Java extends HashMap and maintains a linked list of the entries
 
 8. **Clear**
    map.clear(); // Removes all entries from the map
+
+---
+
+## Use Cases
+
+`LinkedHashMap` is perfect for maintaining insertion order of elements, useful in scenarios like cache implementations where order affects which entries get evicted, such as in LRU caches.

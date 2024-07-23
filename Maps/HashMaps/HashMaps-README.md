@@ -7,6 +7,8 @@
 - **Performance:** `HashMap` offers O(1) time complexity for `put`, `get`, `remove`, and `containsKey` operations under the ideal hashing conditions.
 - **Structure:** `HashMap` is implemented using an array of buckets or bins, which store the entries.
 
+---
+
 ## Key Operations
 
 1. **Initialization**
@@ -40,3 +42,9 @@
 
 8. **Clear**
     ```map.clear();``` --> Removes all entries from the map
+
+---
+
+## Use Cases
+
+`HashMap` is ideal for applications needing fast access to data where the order of entries is not a concern. It is perfect for scenarios like indexing, where keys are unique, and fast retrieval is crucial.

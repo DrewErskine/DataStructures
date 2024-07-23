@@ -10,6 +10,8 @@ TreeMap in Java is part of the Java Collections Framework and implements the Map
 - Performance: Provides O(log n) time complexity for common operations such as insertions, deletions, and lookups.
 - Key Constraints: Does not permit null keys (if relying on natural ordering), as it uses the Comparable interface to determine the data's order.
 
+---
+
 ## Key Operations
 
 1. Initialization
@@ -47,6 +49,8 @@ TreeMap in Java is part of the Java Collections Framework and implements the Map
 8. Clearing the TreeMap
    map.clear();
 
+---
+
 ## Use Cases
 
-TreeMap is ideal for applications where order is crucial, such as displaying sorted data to users or maintaining a naturally ordered list of records.
+`TreeMap` is ideal for applications where an ordered map is crucial. It is suitable for scenarios such as implementing a sorted map, maintaining a naturally ordered list of records, or where range searches are frequent operations.

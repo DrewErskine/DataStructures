@@ -1,13 +1,13 @@
-package Collections.Lists.ArrayLists;
+package Collections.Lists.LinkedLists;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class ArrayListExample {
+public class LinkedListExample {
 
     public static void main(String[] args) {
-        // Create and initialize an ArrayList
-        List<String> list = new ArrayList<>();
+        // Create and initialize a LinkedList
+        List<String> list = new LinkedList<>();
         initializeList(list);
 
         // Access a value
@@ -16,28 +16,31 @@ public class ArrayListExample {
         // Check if a value exists
         checkValue(list);
 
-        // Iterate through the ArrayList with enhanced for-loop
+        // Iterate through the LinkedList with enhanced for-loop
         iterateList(list);
 
-        // Iterate through the ArrayList with standard for-loop
+        // Iterate through the LinkedList with standard for-loop
         iterateList2(list);
 
         // Remove an entry
         removeEntry(list);
 
-        // Check the size of the ArrayList
+        // Poll the last entry
+        pollLastEntry(list);
+
+        // Check the size of the LinkedList
         checkSize(list);
 
-        // Clear the ArrayList
+        // Clear the LinkedList
         clearList(list);
     }
 
     private static void initializeList(List<String> list) {
-        // Add elements to the ArrayList
-        list.add("Apple");
-        list.add("Banana");
+        // Add elements to the LinkedList
+        ((LinkedList<String>)list).addFirst("Apple");
+        list.add("Banana"); // Adds to the end
         list.add("Orange");
-        System.out.println("Initialized ArrayList: " + list);
+        System.out.println("Initialized LinkedList: " + list);
     }
 
     private static void accessValue(List<String> list) {
@@ -53,16 +56,16 @@ public class ArrayListExample {
     }
 
     private static void iterateList(List<String> list) {
-        // Iterate through the ArrayList using enhanced for-loop
-        System.out.println("Iterating through the ArrayList with enhanced for-loop:");
+        // Iterate through the LinkedList using enhanced for-loop
+        System.out.println("Iterating through the LinkedList with enhanced for-loop:");
         for (String fruit : list) {
             System.out.println(fruit);
         }
     }
 
     private static void iterateList2(List<String> list) {
-        // Iterate through the ArrayList using standard for-loop
-        System.out.println("Iterating through the ArrayList with standard for-loop:");
+        // Iterate through the LinkedList using standard for-loop
+        System.out.println("Iterating through the LinkedList with standard for-loop:");
         for (int i = 0; i < list.size(); i++) {
             String fruit = list.get(i);
             System.out.println(fruit);
@@ -75,14 +78,20 @@ public class ArrayListExample {
         System.out.println("After removing Orange: " + list);
     }
 
+    private static void pollLastEntry(List<String> list) {
+        // Poll the last entry
+        String lastFruit = ((LinkedList<String>)list).pollLast();
+        System.out.println("Polled last fruit: " + lastFruit + ", Remaining List: " + list);
+    }
+
     private static void checkSize(List<String> list) {
-        // Check the size of the ArrayList
+        // Check the size of the LinkedList
         int size = list.size();
         System.out.println("Size: " + size); // Outputs: Size: 2
     }
 
     private static void clearList(List<String> list) {
-        // Clear the ArrayList
+        // Clear the LinkedList
         list.clear();
         System.out.println("Size after clearing: " + list.size()); // Outputs: Size after clearing: 0
     }

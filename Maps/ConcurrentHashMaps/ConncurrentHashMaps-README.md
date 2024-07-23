@@ -11,6 +11,8 @@ ConcurrentHashMap is a thread-safe variant of HashMap that does not synchronize 
 - Thread Safety: Provides thread safety without the need to synchronize the whole map.
 - Null Keys and Values: Does not permit null keys or values.
 
+---
+
 ## Key Operations
 
 1. Initialization
@@ -41,6 +43,8 @@ ConcurrentHashMap is a thread-safe variant of HashMap that does not synchronize 
 8. Clearing the Map
    map.clear();
 
+---
+
 ## Use Cases
 
-Suitable for high-concurrency applications where read and write operations need to be performed by many threads without a significant performance penalty.
+`ConcurrentHashMap` is suitable for high-concurrency applications where read and write operations need to be performed by many threads without a significant performance penalty.
