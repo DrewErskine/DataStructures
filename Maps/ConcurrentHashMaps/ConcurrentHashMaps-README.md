@@ -16,32 +16,34 @@ ConcurrentHashMap is a thread-safe variant of HashMap that does not synchronize 
 ## Key Operations
 
 1. Initialization
-   ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
+   - ```ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();```
 
 2. Adding Elements
-   map.put("Apple", 3);
-   map.put("Banana", 5);
+   - ```map.put("Apple", 3);```
+   - ```map.put("Banana", 5);```
 
 3. Accessing Elements
-   Integer appleCount = map.get("Apple");
+   - ```Integer appleCount = map.get("Apple");```
 
 4. Updating Elements
-   map.compute("Apple", (key, val) -> (val == null) ? 1 : val + 1);
+   - ```map.compute("Apple", (key, val) -> (val == null) ? 1 : val + 1);```
 
 5. Iterating Through ConcurrentHashMap
+   - ```
    for (Map.Entry<String, Integer> entry : map.entrySet()) {
    System.out.println(entry.getKey() + " => " + entry.getValue());
    }
+   ```
 
 6. Removing Elements
-   map.remove("Banana");
+   - ```map.remove("Banana");```
 
-7. Size and Other Checks
-   int size = map.size();
-   boolean isEmpty = map.isEmpty();
+7. Size and Empty Check
+   - ```int size = map.size();```
+   - ```boolean isEmpty = map.isEmpty();```
 
 8. Clearing the Map
-   map.clear();
+  - ```map.clear();```
 
 ---
 

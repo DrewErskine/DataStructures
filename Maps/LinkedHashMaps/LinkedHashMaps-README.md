@@ -15,34 +15,36 @@ LinkedHashMap in Java extends HashMap and maintains a linked list of the entries
 ## Key Operations
 
 1. **Initialization**
-   LinkedHashMap<Integer, String> map = new LinkedHashMap<>();
+   ```LinkedHashMap<Integer, String> map = new LinkedHashMap<>();```
 
 2. **Adding Elements**
-   map.put(1, "Apple");
-   map.put(2, "Banana");
+   ```map.put(1, "Apple");```
+   ```map.put(2, "Banana");```
 
 3. **Accessing Elements**
-   String value = map.get(1); // Returns "Apple"
+   ```String value = map.get(1); // Returns "Apple"```
 
 4. **Checking for a Key or Value**
-   boolean hasKey = map.containsKey(1); // Returns true
-   boolean hasValue = map.containsValue("Banana"); // Returns true
+   ```boolean hasKey = map.containsKey(1);``` --> Returns true
+   ```boolean hasValue = map.containsValue("Banana");``` --<> Returns true
 
 5. **Removing Elements**
-   map.remove(2); // Removes the entry with key 2
+   ```map.remove(2);``` --> Removes the entry with key 2
 
 6. **Iterating Through LinkedHashMap**
+   ```
    for (Map.Entry<Integer, String> entry : map.entrySet()) {
       Integer key = entry.getKey();
       String value = entry.getValue();
       System.out.println(key + ": " + value);
    }
+   ```
 
 7. **Size**
-   int size = map.size(); // Returns the number of key-value pairs in the map
+   ```int size = map.size();``` --> Returns the number of key-value pairs in the map
 
 8. **Clear**
-   map.clear(); // Removes all entries from the map
+   ```map.clear();``` --> Removes all entries from the map
 
 ---
 
