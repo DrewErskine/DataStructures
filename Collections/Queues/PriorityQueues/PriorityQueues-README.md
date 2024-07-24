@@ -60,6 +60,10 @@
 - **Task Scheduling**: Suitable for scheduling tasks where priorities are necessary to determine the processing order.
 - **Data Stream Management**: Useful in scenarios where managing data streams based on priority is essential.
 
+---
+---
+
+
 ## PriorityQueue - Comparators
 
 ### Example Task Prioritization
@@ -100,3 +104,7 @@
     }
   }
   ```
+
+---
+---
+---

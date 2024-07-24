@@ -2,32 +2,31 @@
 
 Collections are data structures that group multiple elements into a single unit. They are used to store, retrieve, manipulate, and communicate aggregate data.
 
-```Data aggregation - The process of organizing large amounts of data into a more consumable format.```
-
+`Data aggregation - The process of organizing large amounts of data into a more consumable format.`
 
 ## Table of Contents
 
 - [Lists](#lists)
-    - Array Lists
-        - [ArrayLists README](Lists/ArrayLists/ArrayLists-README.md)
-        - [ArrayList Example](Lists/ArrayLists/ArrayListExample.java)
-    - Linked Lists
-        - [LinkedLists README](Lists/LinkedLists/LinkedLists-README.md)
-        - [LinkedList Example](Lists/LinkedLists/LinkedListExample.java)
+  - Array Lists
+    - [ArrayLists README](Lists/ArrayLists/ArrayLists-README.md)
+    - [ArrayList Example](Lists/ArrayLists/ArrayListExample.java)
+  - Linked Lists
+    - [LinkedLists README](Lists/LinkedLists/LinkedLists-README.md)
+    - [LinkedList Example](Lists/LinkedLists/LinkedListExample.java)
 - [Queues](#queues)
-    - Array Deques
-        - [ArrayDeques README](Queues/ArrayDeques/ArrayDeques-README.md)
-        - [ArrayDeque Example](Queues/ArrayDeques/ArrayDequeExample.java)
-    - Priority Queues
-        - [PriorityQueue README](Queues/PriorityQueue/PriorityQueue-README.md)
-        - [PriorityQueue Example](Queues/PriorityQueue/PriorityQueueExample.java)
-    - Stacks
-        - [Stacks README](Queues/Stacks/Stacks-README.md)
-        - [Stack Example](Queues/Stacks/StackExample.java)
+  - Array Deques
+    - [ArrayDeques README](Queues/ArrayDeques/ArrayDeques-README.md)
+    - [ArrayDeque Example](Queues/ArrayDeques/ArrayDequeExample.java)
+  - Priority Queues
+    - [PriorityQueue README](Queues/PriorityQueue/PriorityQueue-README.md)
+    - [PriorityQueue Example](Queues/PriorityQueue/PriorityQueueExample.java)
+  - Stacks
+    - [Stacks README](Queues/Stacks/Stacks-README.md)
+    - [Stack Example](Queues/Stacks/StackExample.java)
 - [Sets](#sets)
-    - Hash Sets
-        - [HashSets README](Sets/HashSets/HashSets-README.md)
-        - [HashSet Example](Sets/HashSets/HashSetExample.java)
+  - Hash Sets
+    - [HashSets README](Sets/HashSets/HashSets-README.md)
+    - [HashSet Example](Sets/HashSets/HashSetExample.java)
 
 ---
 
@@ -60,3 +59,7 @@ Sets in Java are used to store unique elements, preventing duplicates and provid
 - Explore the details about different list implementations in [Lists README](./Lists/Lists-README.md).
 - Learn more about queue types and their use cases in [Queues README](./Queues/Queues-README.md).
 - Discover how sets can enhance data handling in [Sets README](./Sets/Sets-README.md).
+
+---
+---
+---

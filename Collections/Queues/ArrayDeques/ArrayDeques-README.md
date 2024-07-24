@@ -16,48 +16,63 @@
 ### 1. Initialization
 
 - Initialize an `ArrayDeque`:
-  `ArrayDeque<Integer> deque = new ArrayDeque<>();`
+
+      `ArrayDeque<Integer> deque = new ArrayDeque<>();`
 
 ### 2. Adding Elements
 
 - Add elements to the end and the front:
-  `deque.offer("Apple");` // Adds to the end of the deque
-  `deque.addFirst("Banana");` // Adds to the front of the deque
+
+      `deque.offer("Apple");` ---> Adds to the end of the deque
+      `deque.addFirst("Banana");` ---> Adds to the front of the deque
 
 ### 3. Accessing Elements
 
 - Access elements from the front and the end:
-  `String first = deque.peekFirst();` // Returns the first element without removing
-  `String last = deque.peekLast();` // Returns the last element without removing
+
+      `String first = deque.peekFirst();` ---> Returns the first element without removing
+      `String last = deque.peekLast();` ---> Returns the last element without removing
 
 ### 4. Removing Elements
 
 - Remove elements from the front and the end:
-  `String removeFirst = deque.pollFirst();` // Removes and returns the first element
-  `String removeLast = deque.pollLast();` // Removes and returns the last element
 
-### 5. Iterating Through ArrayDeque
+      `String removeFirst = deque.pollFirst();` ---> Removes and returns the first element
+      `String removeLast = deque.pollLast();` ---> Removes and returns the last element
+
+### 5. Check Size and if Empty
+
+- Check if the deque is empty and its size:
+
+  `int size = deque.size();` ---> Returns the number of elements in the deque
+
+  `boolean isEmpty = deque.isEmpty();` ---> Return True if empty
+
+### 6. Clear
+
+- Clear all elements from the deque:
+
+  `deque.clear();` ---> Removes all elements from the deque
+
+### 7. Iterating Through ArrayDeque
 
 - Iterate through `ArrayDeque` using enhanced for loop:
+
   ```
   for (String fruit : deque) {
       System.out.println(fruit);
   }
   ```
 
-### 6. Check Size and if Empty
-
-- Check if the deque is empty and its size:
-  `int size = deque.size();` // Returns the number of elements in the deque
-  `boolean isEmpty = deque.isEmpty();` // Checks if the deque is empty
-
-### 7. Clear
-
-- Clear all elements from the deque:
-  `deque.clear();` // Removes all elements from the deque
-
 ---
 
 ## Use Cases
 
-`ArrayDeque` is ideal for applications that require efficient additions and removals from both ends of a collection. It is particularly well-suited for implementing both stacks (LIFO) and queues (FIFO), where quick access and modification are crucial.
+- **Efficiency in Operations**: Perfect for applications that need efficient additions and removals from both ends of a collection.
+- **Stack and Queue Implementations**: Excellently suited for implementing both stacks (LIFO) and queues (FIFO) where quick access and modification are crucial.
+
+---
+
+---
+
+---

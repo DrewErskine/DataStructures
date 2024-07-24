@@ -16,37 +16,50 @@ ConcurrentHashMap is a thread-safe variant of HashMap that does not synchronize 
 ## Key Operations
 
 1. Initialization
-   - ```ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();```
+
+   - `ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();`
 
 2. Adding Elements
-   - ```map.put("Apple", 3);```
-   - ```map.put("Banana", 5);```
+
+   - `map.put("Apple", 3);`
+   - `map.put("Banana", 5);`
 
 3. Accessing Elements
-   - ```Integer appleCount = map.get("Apple");```
+
+   - `Integer appleCount = map.get("Apple");`
 
 4. Updating Elements
-   - ```map.compute("Apple", (key, val) -> (val == null) ? 1 : val + 1);```
+
+   - `map.compute("Apple", (key, val) -> (val == null) ? 1 : val + 1);`
 
 5. Iterating Through ConcurrentHashMap
-   - ```
-   for (Map.Entry<String, Integer> entry : map.entrySet()) {
-   System.out.println(entry.getKey() + " => " + entry.getValue());
-   }
+
+   ```
+    for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + " => " + entry.getValue());
+    }
    ```
 
 6. Removing Elements
-   - ```map.remove("Banana");```
+
+   - `map.remove("Banana");`
 
 7. Size and Empty Check
-   - ```int size = map.size();```
-   - ```boolean isEmpty = map.isEmpty();```
+
+   - `int size = map.size();`
+   - `boolean isEmpty = map.isEmpty();`
 
 8. Clearing the Map
-  - ```map.clear();```
+
+- `map.clear();`
 
 ---
 
 ## Use Cases
 
-`ConcurrentHashMap` is suitable for high-concurrency applications where read and write operations need to be performed by many threads without a significant performance penalty.
+- **High-Concurrency Environments**: Supports environments with multiple threads performing concurrent read and write operations without locking the entire map.
+- **Performance-Critical Applications**: Suitable for use cases where the performance penalty of thread synchronization must be minimized, ensuring faster access and updates.
+
+---
+---
+---
