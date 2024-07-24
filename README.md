@@ -14,6 +14,7 @@ Welcome to the Data Structures Practice repository!
         - [Stacks](Collections/Queues/Stacks/Stacks-README.md)
     - [Sets](Collections/Sets/Sets-README.md)
         - [HashSets](Collections/Sets/HashSets/HashSets-README.md)
+        - [TreeSet](Collections/Sets/TreeSets/TreeSets-README.md)
 2. [Maps](Maps/Maps-README.md)
     - [ConcurrentHashMaps](Maps/ConcurrentHashMaps/ConcurrentHashMaps-README.md)
     - [HashMaps](Maps/HashMaps/HashMaps-README.md)
@@ -39,12 +40,6 @@ Collections in Java provide mechanisms to handle groups of objects. Various type
 ## Maps
 
 Facilitate efficient data retrieval through unique keys and are particularly useful for high-speed lookups and maintaining insertion order or sorted order.
-
----
-
-## Credits
-
-- Peep my cat for the moral support during late-night coding sessions.
 
 ---
 ---

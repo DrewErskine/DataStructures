@@ -15,28 +15,20 @@ Maps are data structures that store key-value pairs. They provide an efficient w
 
 ConcurrentHashMaps are designed for concurrent use by multiple threads without the need for external synchronization.
 
-- [Learn about ConcurrentHashMaps](ConcurrentHashMaps/ConcurrentHashMaps-README.md)
-- [ConcurrentHashMap Example](ConcurrentHashMaps/ConcurrentHashMapExample.java)
-
 ## HashMaps
 
 HashMaps provide constant-time performance for the basic operations (get and put), assuming the hash function disperses elements properly.
 
-- [Learn about HashMaps](HashMaps/HashMaps-README.md)
-- [HashMap Example](HashMaps/HashMapExample.java)
 
 ## LinkedHashMaps
 
 LinkedHashMaps maintain the insertion order of entries, making it suitable for caching applications where order matters.
 
-- [Learn about LinkedHashMaps](LinkedHashMaps/LinkedHashMaps-README.md)
-- [LinkedHashMap Example](LinkedHashMaps/LinkedHashMapExample.java)
 
 ## TreeMaps
 
 TreeMaps maintain a sorted map according to the natural ordering of its keys, or by a comparator provided at map creation, ideal for applications that depend on ordered data.
 
-- [Learn about TreeMaps](TreeMaps/TreeMaps-README.md)
 
 ---
 
