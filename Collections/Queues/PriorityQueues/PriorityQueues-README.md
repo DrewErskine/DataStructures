@@ -1,59 +1,74 @@
-# README for PriorityQueue in Java
+# PriorityQueue README
 
 ## Overview
 
-`PriorityQueue` in Java is part of the Java Collections Framework and is implemented using a priority heap. It stores elements based on priority, which can be determined by natural ordering or through a custom comparator provided at the time of queue construction.
+`PriorityQueue` in Java is part of the Java Collections Framework and implements the `Queue` interface. It is used to process elements in a priority-based order rather than the conventional FIFO order of regular queues. `PriorityQueue` is typically backed by a heap structure to enable efficient insertion and removal of elements.
 
 ## Features
 
-- **No Null Elements**: Null elements are not permitted in the queue.
-- **Ordering**: Elements are ordered either by their natural ordering or by a comparator provided during construction. Note that the queue does not necessarily represent this order explicitly in its structure.
-- **Performance**: Provides O(log n) time complexity for insertions and deletions.
+- **Priority-Based Ordering**: Elements are ordered according to their natural ordering or by a comparator provided at queue construction.
+- **Efficiency**: Offers efficient enqueue and dequeue operations in logarithmic time.
+- **Comparator Support**: Allows custom ordering of elements through comparators.
+
+---
 
 ## Key Operations
 
 ### 1. Initialization
 
-- Without a comparator:
-  `PriorityQueue<Integer> pq = new PriorityQueue<>();`
+- Initialize a `PriorityQueue` with natural ordering:
+  ```java
+  PriorityQueue<String> pq = new PriorityQueue<>();
+  ```
 
-- With a custom comparator (reverse order):
-  `PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());`
+- Initialize with a custom comparator:
+  ```java
+  PriorityQueue<String> pq = new PriorityQueue<>(Comparator.reverseOrder());
+  ```
 
 ### 2. Adding Elements
 
 - Add elements to the queue:
-  `pq.offer("Apple");`
-  `pq.offer("Banana");`
-  `pq.offer("Cherry");`
+  ```java
+  pq.offer("Apple");
+  pq.offer("Banana");
+  pq.offer("Cherry");
+  ```
 
 ### 3. Accessing Elements
 
 - Peek at the highest priority element (the head of the queue):
-  `String head = pq.peek();` // Returns "Apple" if natural order is alphabetical
+  ```java
+  String head = pq.peek(); // Returns the highest priority element
+  ```
 
 ### 4. Removing Elements
 
 - Remove the element with the highest priority:
-  `String removedElement = pq.poll();` // Removes and returns "Apple"
+  ```java
+  String removedElement = pq.poll(); // Removes and returns the highest priority element
+  ```
 
 ### 5. Iterating Through PriorityQueue
 
-- Continuously poll the queue:
-  ```
+- Continuously poll the queue to process elements by priority:
+  ```java
   while (!pq.isEmpty()) {
-    System.out.println(pq.poll());
+      System.out.println(pq.poll()); // Prints elements in priority order
   }
   ```
 
-### 6. Size, Empty, Clear Operations
+### 6. Check Size, Empty, and Clear Operations
 
-- Check the size of the queue and if it is empty:
-  `int size = pq.size();`
-  `boolean isEmpty = pq.isEmpty();`
+_Check the size of the queue, if it is empty, and clear operations:_
 
-- Clear the queue:
-  `pq.clear();`
+```java
+int size = pq.size(); // Returns the number of elements
+boolean isEmpty = pq.isEmpty(); // Returns true if empty
+pq.clear(); // Clears all elements from the queue
+```
+
+---
 
 ## Use Cases
 
@@ -61,8 +76,6 @@
 - **Data Stream Management**: Useful in scenarios where managing data streams based on priority is essential.
 
 ---
----
-
 
 ## PriorityQueue - Comparators
 
@@ -70,7 +83,7 @@
 
 - Define a task class with a priority based on color:
 
-  ```
+  ```java
   class Task {
     String name;
     String color;
@@ -84,7 +97,7 @@
 
 - Implement a comparator to prioritize tasks by color:
 
-  ```
+  ```java
   class TaskComparator implements Comparator<Task> {
     public int compare(Task t1, Task t2) {
         return Integer.compare(getPriority(t1.color), getPriority(t2.color));
@@ -108,3 +121,9 @@
 ---
 ---
 ---
+
+
+---
+
+---
+

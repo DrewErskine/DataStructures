@@ -1,4 +1,4 @@
-# README for HashMap in Java
+# HashMap README
 
 ## Overview
 
@@ -6,52 +6,77 @@
 
 ## Features
 
-- **Performance:** `HashMap` offers O(1) time complexity for `put`, `get`, `remove`, and `containsKey` operations under the ideal hashing conditions.
+- **Performance:** `HashMap` offers O(1) time complexity for `put`, `get`, `remove`, and `containsKey` operations under ideal hashing conditions.
 - **Structure:** `HashMap` is implemented using an array of buckets or bins, which store the entries.
 
 ---
 
 ## Key Operations
 
-1. **Initialization**
+### 1. Initialization
 
-      `HashMap<Integer, String> map = new HashMap<>();## Key Operations`
+- Initialize a `HashMap`:
+  ```java
+  HashMap<Integer, String> map = new HashMap<>();
+  ```
 
-2. **Adding an element**
+### 2. Adding Elements
 
-      `map.put(1, "Apple");`
-      `map.put(2, "Banana");`
+- Add elements to the `HashMap`:
+  ```java
+  map.put(1, "Apple");
+  map.put(2, "Banana");
+  ```
 
-3. **Accessing an element**
+### 3. Accessing Elements
 
-      `String value = map.get(1);` --> Returns "Apple"
+- Access an element by key:
+  ```java
+  String value = map.get(1); // Returns "Apple"
+  ```
 
-4. **Check for a Key or Value**
+### 4. Checking for a Key or Value
 
-      `boolean hasKey = map.containsKey(1);` --> Returns true
-      `boolean hasValue = map.containsValue("Banana");` --> Returns False
+- Check if a key or value is present in the map:
+  ```java
+  boolean hasKey = map.containsKey(1); // Returns true
+  boolean hasValue = map.containsValue("Banana"); // Returns false
+  ```
 
-5. **Remove Element**
+### 5. Removing Elements
 
-      `map.remove(2);` --> Removes the entry with key 2
+- Remove an element by key:
+  ```java
+  map.remove(2); // Removes the entry with key 2
+  ```
 
-6. **Iterate Through HashMap**
+### 6. Iterating Through HashMap
 
-   ```
-   for (Map.Entry<Integer, String> entry : map.entrySet()) {
-       Integer key = entry.getKey();
-       String value = entry.getValue();
-       System.out.println(key + ": " + value);
-   }
-   ```
+- Iterate through entries:
+  ```java
+  for (Map.Entry<Integer, String> entry : map.entrySet()) {
+      System.out.println(entry.getKey() + ": " + value);
+  }
+  ```
 
-7. **Size**
+### 7. Check Size and Emptiness
 
-   `int size = map.size();` --> Returns the number of key-value pairs in the map
+_Check the size of the map and whether it is empty:_
 
-8. **Clear**
+```java
+int size = map.size(); // Returns the number of key-value pairs in the map
+```
+```java
+boolean isEmpty = map.isEmpty(); // Return True if empty
+```
 
-   `map.clear();` --> Removes all entries from the map
+### 8. Clearing the HashMap
+
+_Clear all entries from the `HashMap`:_
+
+```java
+map.clear();
+```
 
 ---
 
@@ -61,5 +86,8 @@
 - **Indexing**: Ideal for indexing operations where unique keys need to be mapped to specific values quickly, ensuring efficient data retrieval.
 
 ---
+
 ---
+
 ---
+

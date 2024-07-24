@@ -1,13 +1,13 @@
-# README for ArrayDeque in Java
+# ArrayDeque README
 
 ## Overview
 
-`ArrayDeque` in Java is part of the Java Collections Framework and implements the `Deque` interface. It uses a resizable array, making it highly versatile for both stack and queue operations. `ArrayDeque` allows elements to be added or removed from both ends efficiently, without the overhead of node allocation required by linked structures.
+`ArrayDeque` in Java is part of the Java Collections Framework and implements the `Deque` interface, utilizing a resizable array to facilitate efficient operations at both ends without the overhead of node allocation.
 
 ## Features
 
-- **Efficiency**: More efficient than `Stack` and `LinkedList` for stack and queue operations because it avoids the overhead of node allocation.
-- **No Null Elements**: Does not permit null elements, enhancing stability and performance.
+- **Efficiency**: Superior to `Stack` and `LinkedList` for stack and queue operations due to minimal overhead.
+- **No Null Elements**: Enhances stability and performance by not permitting null elements.
 
 ---
 
@@ -16,63 +16,71 @@
 ### 1. Initialization
 
 - Initialize an `ArrayDeque`:
-
-      `ArrayDeque<Integer> deque = new ArrayDeque<>();`
+  ```java
+  ArrayDeque<Integer> deque = new ArrayDeque<>();
+  ```
 
 ### 2. Adding Elements
 
-- Add elements to the end and the front:
-
-      `deque.offer("Apple");` ---> Adds to the end of the deque
-      `deque.addFirst("Banana");` ---> Adds to the front of the deque
+- Add elements efficiently to both ends:
+  ```java
+  deque.offer("Apple");  // Adds to the end
+  deque.addFirst("Banana");  // Adds to the front
+  ```
 
 ### 3. Accessing Elements
 
-- Access elements from the front and the end:
-
-      `String first = deque.peekFirst();` ---> Returns the first element without removing
-      `String last = deque.peekLast();` ---> Returns the last element without removing
+- Access elements from either end:
+  ```java
+  String first = deque.peekFirst();  // Returns the first element without removing
+  String last = deque.peekLast();  // Returns the last element without removing
+  ```
 
 ### 4. Removing Elements
 
-- Remove elements from the front and the end:
+- Remove elements from both ends:
+  ```java
+  String removeFirst = deque.pollFirst();  // Removes and returns the first element
+  String removeLast = deque.pollLast();  // Removes and returns the last element
+  ```
 
-      `String removeFirst = deque.pollFirst();` ---> Removes and returns the first element
-      `String removeLast = deque.pollLast();` ---> Removes and returns the last element
+### 5. Check Size and Emptiness
 
-### 5. Check Size and if Empty
+_Check the size of the deque and whether it is empty:_
 
-- Check if the deque is empty and its size:
+```java
+int size = deque.size();  // Returns the number of elements
+boolean isEmpty = deque.isEmpty();  // Returns true if empty
+```
 
-  `int size = deque.size();` ---> Returns the number of elements in the deque
+### 6. Clearing the ArrayDeque
 
-  `boolean isEmpty = deque.isEmpty();` ---> Return True if empty
+_Clear all elements from the `ArrayDeque`:_
 
-### 6. Clear
-
-- Clear all elements from the deque:
-
-  `deque.clear();` ---> Removes all elements from the deque
+```java
+deque.clear();
+```
 
 ### 7. Iterating Through ArrayDeque
 
-- Iterate through `ArrayDeque` using enhanced for loop:
+_Iterate through `ArrayDeque` using an enhanced for loop:_
 
-  ```
-  for (String fruit : deque) {
-      System.out.println(fruit);
-  }
-  ```
+```java
+for (String fruit : deque) {
+    System.out.println(fruit);
+}
+```
 
 ---
 
 ## Use Cases
 
-- **Efficiency in Operations**: Perfect for applications that need efficient additions and removals from both ends of a collection.
-- **Stack and Queue Implementations**: Excellently suited for implementing both stacks (LIFO) and queues (FIFO) where quick access and modification are crucial.
+- **Efficiency in Operations**: Ideal for applications requiring quick additions and removals from both ends.
+- **Memory Optimization**: Bigger memory overhead compared to linked structures.
 
 ---
 
 ---
 
 ---
+

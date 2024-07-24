@@ -49,7 +49,7 @@ public class TreeMapExample {
     private static void checkKeyValue(TreeMap<String, Integer> map) {
         // Check if a key or value exists
         boolean hasBananas = map.containsKey("Banana");
-        boolean hasGrapes = map.containsValue("Grapes");
+        boolean hasGrapes = map.containsValue("Brapes");
         System.out.println("Has Bananas: " + hasBananas); // Outputs: Has Bananas: true
         System.out.println("Has Grapes: " + hasGrapes); // Outputs: Has Grapes: false
     }

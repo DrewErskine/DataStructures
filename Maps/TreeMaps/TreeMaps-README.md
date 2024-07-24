@@ -13,63 +13,56 @@
 ### 1. Initialization
 
 - Initialize a `TreeMap` without a comparator:
-
-```java
-TreeMap<Integer, String> map = new TreeMap<>();
-```
+  ```java
+  TreeMap<Integer, String> map = new TreeMap<>();
+  ```
 
 - Initialize a `TreeMap` with a custom comparator:
-
-```java
-TreeMap<String, String> map = new TreeMap<>(Comparator.reverseOrder());
-```
+  ```java
+  TreeMap<String, String> map = new TreeMap<>(Comparator.reverseOrder());
+  ```
 
 ### 2. Adding Elements
 
 - Add elements to the TreeMap:
-
-```java
-map.put(3, "Apple");
-map.put(1, "Banana");
-map.put(2, "Cherry");
-```
+  ```java
+  map.put(3, "Apple");
+  map.put(1, "Banana");
+  map.put(2, "Cherry");
+  ```
 
 ### 3. Accessing Elements
 
 - Access an element by key:
-
-```java
-String fruit = map.get(1); // "Banana"
-```
+  ```java
+  String fruit = map.get(1); // Returns "Banana"
+  ```
 
 ### 4. Accessing First and Last Elements
 
 - Access the first and last keys:
-
-```java
-System.out.println(map.firstKey());` // Prints the smallest key
-System.out.println(map.lastKey());` // Prints the largest key
-```
+  ```java
+  System.out.println(map.firstKey());` // Prints the smallest key
+  System.out.println(map.lastKey());` // Prints the largest key
+  ```
 
 ### 5. Removing Elements
 
 - Remove an element by key:
-
-```java
-map.remove(2);
-```
+  ```java
+  map.remove(2);
+  ```
 
 ### 6. SubMap Operations
 
 - Create a subMap from the TreeMap:
+  ```java
+  SortedMap<Integer, String> subMap = map.subMap(1, 3);` // Includes keys 1 inclusive to 3 exclusive
+  ```
 
-```java
-SortedMap<Integer, String> subMap = map.subMap(1, 3);` // Includes keys 1 inclusive to 3 exclusive
-```
+### 7. Check Size and Emptiness
 
-### 7. Check Size and if Empty
-
-- Check the size of the TreeMap and if it is empty:
+_Check the size of the map and whether it is empty:_
 
 ```java
 int size = map.size(); // Returns the number of elements in the map
@@ -80,15 +73,16 @@ boolean isEmpty = map.isEmpty(); // Return True if empty
 
 ### 8. Clearing the TreeMap
 
-- Clear all entries from the TreeMap:
+_Clear all entries from the `TreeMap`_
 
 ```java
 map.clear();
 ```
 
+
 ### 9. Iterating Through TreeMap
 
-- Iterate through entries in the TreeMap:
+_Iterate through entries in the `TreeMap`:_
 
 ```java
 for (Map.Entry<Integer, String> entry : map.entrySet()) {
